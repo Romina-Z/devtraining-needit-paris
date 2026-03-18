@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Runner</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="splash-screen" class="panel active" aria-label="Splash screen">
+        <h1 class="title">PIXEL RUNNER</h1>
+        <p class="subtitle">A tiny retro dodge game</p>
+        <div class="controls">
+          <p>Move: ← → or A / D</p>
+          <p>Pause: P</p>
+        </div>
+        <button id="start-button" type="button">PRESS START</button>
+      </section>
+
+      <section id="game-screen" class="panel" aria-label="Game screen" aria-hidden="true">
+        <header class="hud">
+          <p>Score: <span id="score">0</span></p>
+          <p>Lives: <span id="lives">3</span></p>
+          <p id="status-text">RUN!</p>
+        </header>
+        <canvas id="game-canvas" width="640" height="360"></canvas>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
